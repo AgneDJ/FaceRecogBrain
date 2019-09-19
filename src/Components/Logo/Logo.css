@@ -1,0 +1,11 @@
+.Tilt {
+	background: linear-gradient(89deg, #F7DC6F 0%, #F1948A 100%);
+    max:            35;     
+    perspective:    1000;   
+    scale:          1;      
+    speed:          300;   
+    transition:     true;  
+    axis:           null;  
+    reset:          true;  
+    easing:         "cubic-bezier(.03,.98,.52,.99)";
+}
