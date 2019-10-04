@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "clarifai": "^2.9.1",
+    "cors": "^2.8.5",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-particles-js": "^2.7.0",
@@ -31,5 +32,21 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "",
+  "main": "",
+  "devDependencies": {
+    "nodemon": "^1.19.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AgneDJ/FaceRecogBrain.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AgneDJ/FaceRecogBrain/issues"
+  },
+  "homepage": "https://github.com/AgneDJ/FaceRecogBrain#readme"
 }
