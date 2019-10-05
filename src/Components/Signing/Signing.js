@@ -26,11 +26,13 @@ class Signing extends React.Component {
 			})
 		})
 			.then(response=> response.json())
-			.then(data =>{
-				if(data=== 'success'){
+			.then(user =>{
+				if(user.id){
+					this.props.loadUser(user);
 					this.props.onRouteChange('home');
 				}
 			})
+
 	}
 	render(){
 		const { onRouteChange } = this.props;
