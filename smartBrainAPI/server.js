@@ -78,7 +78,7 @@ app.post('/signin', (req, res) => {
 
 app.post('/register', (req, res)=> {
 	const{email, Name, password} =req.body;
-	const hash = bcrypt.hashSync(password);
+	const hash = bcrypt.hashSync(password, saltRounds);
 		db.transaction(trx => {
 			trx.insert({
 				hash: hash,
@@ -90,7 +90,7 @@ app.post('/register', (req, res)=> {
 				return trx('users')
 					.returning('*')
 					.insert({
-						email: loginEmail,
+						email: loginEmail[0],
 						name: Name,
 						joined: new Date()
 					})
