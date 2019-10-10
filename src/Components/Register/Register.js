@@ -6,7 +6,7 @@ class Register extends React.Component {
 		this.state={
 			email: '',
 			password: '',
-			Name: ''
+			name: ''
 		}
 	}
 
@@ -20,7 +20,7 @@ class Register extends React.Component {
 	}
 
 	onNameChange=(event)=>{
-		this.setState({Name: event.target.value})
+		this.setState({name: event.target.value})
 	}
 	
 	onSubmitSignIn = () => {
@@ -30,7 +30,7 @@ class Register extends React.Component {
 			body: JSON.stringify({
 				email: this.state.email,
 				password: this.state.password,
-				Name: this.state.Name,
+				name: this.state.name,
 
 			})
 		})
